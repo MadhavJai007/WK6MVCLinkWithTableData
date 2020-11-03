@@ -1,0 +1,18 @@
+﻿@using WK6MVCLinkWithTableData.Models
+@model IEnumerable<Faculty>
+@{
+    ViewBag.Title = "Show Faculty Names";
+}
+
+<h2>Show Faculty Names</h2>
+
+<ul>
+    @foreach (Faculty f in Model)
+    {
+        <li>
+            @Html.ActionLink(f.Name, "ShowStudentNamesByFaculty", "Student", new { id = f.Id }, null)
+        </li>
+    }
+
+</ul>
+@Html.ActionLink("Go to Student List", "ShowStudentNames", "Student")

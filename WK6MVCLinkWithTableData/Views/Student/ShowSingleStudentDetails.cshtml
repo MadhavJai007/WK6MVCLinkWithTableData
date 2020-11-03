@@ -1,0 +1,29 @@
+﻿@model WK6MVCLinkWithTableData.Models.Student
+
+@{
+    ViewBag.Title = "Show Single Student Details";
+}
+
+<h2>ShowSingleStudentDetails</h2>
+
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>@Model.Id </td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Model.Name </td>
+    </tr>
+    <tr>
+        <td>Grade</td>
+        <td>@Model.Grade </td>
+    </tr>
+    <tr>
+        <td>Faculty</td>
+        <td>@Model.FacultyId </td>
+    </tr>
+</table>
+
+@Html.ActionLink("Go back to list", "ShowStudentNames")
+
