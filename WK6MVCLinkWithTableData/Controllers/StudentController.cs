@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using WK6MVCLinkWithTableData.Models;
 
+// nouffing
+
 namespace WK6MVCLinkWithTableData.Controllers
 {
     public class StudentController : Controller
